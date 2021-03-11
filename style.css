@@ -1,0 +1,472 @@
+html,body{
+    box-sizing: border-box;
+   background-image: #EFEEE9;
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+
+}
+
+.navbar-brand img{
+    width: 86px;
+    height: 50px;
+    
+}
+.navbar{
+    background-color:rgba(0,0,0,0.5);
+}
+.nav-link{
+
+    color: #FFFFFF !important;
+    transition:  .3s  ease-in-out;
+
+    
+}
+
+.nav-link::after{
+    content: "";
+    display: inline-block;
+    border-right: 2px solid #F2F2F2;
+    height: 12px;
+    padding: 0px 1px;
+    opacity: 0;
+    transition:  .3s  ease-in-out;
+
+    
+
+}
+.nav-link::before{
+    content: "";
+    display: inline-block;
+    
+    height: 12px;
+    opacity: 0;
+    border-left: 2px solid #F2F2F2;
+    padding: 0px 1px;
+    transition:  .3  ease-in-outs;
+
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+    transition:  .3s  ease-in-out;
+    padding: 3px
+} 
+.nav-link:hover::before{
+    opacity: 1;
+    transition:  .3s  ease-in-out;
+    padding: 3px
+} 
+
+
+
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/banner.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    
+   
+}
+
+
+
+.banner-middle{
+
+    margin: 0 auto;
+    position: relative;
+    top:200px;
+    left:0;
+}
+
+
+
+
+.gap{
+    background-color: #FAFAFA;
+    padding: 80px 100px;
+}
+
+.gap2{
+    background-color: #FFFFE6;
+    padding: 90px 10px;
+}
+
+.gap3{
+    background-color:#F9EAE3;
+    padding:80px 100px;
+    position: relative;
+    top: 100px;
+
+   
+
+}
+
+.rok{
+    font-size: 25px;
+    padding: 7px;
+
+}
+.rok::after{
+    content: "";
+    border-bottom: 1px solid #BBBBBB;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    height: 20px;;
+
+}
+.rok2::after{
+    content: "";
+    border-bottom: 1px solid #BBBBBB;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    height: 20px;;
+
+}
+
+.rok2:hover.rok2::after{
+    width: 100px;
+    border-color: red;
+    transition: all 1s ease-in-out;
+
+}
+
+
+
+.padding{
+    padding-bottom: 90px;
+}
+
+
+
+
+footer{
+    background-color: #30323B;
+    padding: 200px 100px;
+    color: #A6A7AB;
+    font-size: 16px;
+    text-align: justify;
+    
+  
+
+   
+   
+}
+
+
+
+
+
+/*----------------------Image Overlay---------*/
+
+.img-box{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height:100% ;
+}
+
+.img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+  }
+
+
+.img-title{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+  background:rgba(0, 0, 0, .5);
+  color: #f1f1f1; 
+  width: 100%;
+  transition: 1s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.img-box:hover .img-title{
+    opacity: 0;
+    transition: 1s ease;
+
+}
+.img-box:hover img{
+    transform: scale(1.5);
+    transition: 1s ease;
+}
+
+/*----------------------Image Overlay---------*/
+
+
+/*-------------------------Triangel/Rhombuses Starts-------------------*/
+
+
+.relative{
+    position: relative;
+    z-index: 1;
+    transition: 1s ease;
+    cursor: pointer;
+    
+}
+.triangle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:darkred;
+    top: 20px;
+    left: 60px;
+    z-index: -1;
+    transform: rotate(45deg);
+    transition: 1s ease;
+   
+    
+
+}
+.relative:hover .triangle{
+    transform: rotate(40deg);
+    transition: 1s ease;
+    
+    
+}
+
+/*-------------------------Triangel/Rhombuses Ends-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------2nd page  ///      Menu page Start---------*/
+
+
+
+.banner2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),url(img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 900px;
+    background-attachment: fixed;
+}
+
+.banner2-title{
+
+    position: relative;
+    top:200px;
+
+}
+.mik{
+    position: relative;
+    bottom: 300px;
+    
+}
+.btun{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #B77540;
+    border-radius: 0;
+    
+}
+
+.btun::after{
+    content: "\00bb ";
+    display: inline-block;
+    margin-left: 5px;
+    font-size:25px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.btun:hover::after{
+    opacity: 1;
+    transition: .5s ease;
+    padding-right: 10px;
+}
+
+.btun:hover{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #B77540;
+    transition: .5s ease;
+   
+
+}
+
+.dollar::before{
+    content: "\0024";
+    padding: 4px;
+    font-size: 22px;
+}
+
+/*-------------------------Reservation page Starts__________----------------*/
+
+.banner3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),url(img/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 900px;
+    background-attachment: fixed;
+}
+.reserve{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(img/paper.jpg);
+    width: 100%;
+    height: 446px;
+    position: relative;
+    bottom: 240px;}
+
+.input-group-text{
+    border-radius: 0;
+}
+form{
+    border-radius: 0;
+}
+.title{
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+
+
+/*-------------------------Reservation page Ends----------------*/
+
+
+/*-----------------------------Media Quries Starts------------------------*/
+@media (max-width:700px){
+    
+    .banner-middle {
+        position: relative;
+        top: 250px;
+    }
+    .menu1-title h1{
+        font-size: 30px;
+       
+    }
+    .menu1-title p{
+        font-size: 13px;
+    }
+    .menu1-footer p{
+        font-size: 16px;
+    }
+
+    .menu2-title h2{
+        font-size: 18px;
+    }
+    .menu2-left{
+        font-size: 15px;
+    }
+
+    .menu2-right{
+        font-size: 15px;
+    }
+
+    .img-title{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+         background:rgba(0, 0, 0, .5);
+         color: #f1f1f1; 
+         width: 100%;
+         transition: 1s ease;
+         opacity:1;
+         color: white;
+         font-size: 13px;
+         padding: 5px;
+         text-align: center;
+       }
+
+       .contact-title{
+           font-size:20px; 
+       }
+       .rok2{
+           font-size: 30px;
+           
+       }
+       .social-left{
+           margin-bottom: 30px;
+          
+       }
+       .social-left p{
+           font-size: 15px;
+       }
+       #news{
+           width: 100%;
+           text-align: center;
+           font-size: 15px;
+           
+       }
+    .social-middle h2{
+        font-size: 30px;
+    }
+    .social-middle p{
+        font-size: 15px;
+    }
+    .social-middle h3{
+        font-size: 18px;
+    } 
+
+    .social-right{
+       width: 360px;
+       padding: 0;
+       margin-right: 200px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+
+
+    
+
+}
+
+@media (max-width:530px){
+    .social-right{
+        display: none;
+     }
+    
+    footer{
+        padding: 90px 50px;
+        position: relative;
+    }
+
+    footer p{
+        font-size: 13px;
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        
+    }
+
+}
+
